@@ -1,0 +1,35 @@
+{
+	"Componente": {
+		"prefix": ".componente",
+		"body": [
+			"export function ${1:Componente}() {",
+			"",
+			"\treturn (",
+			"\t\t$0",
+			"\t)",
+			"}"
+		],
+		"description": "Cria um componente funcional"
+	},
+
+
+	"Componente CSS": {
+		"prefix": ".componente-css",
+		"body": [
+			"import styles from './${1:Componente}.module.css'",
+			"",
+			"export function ${1:Componente}() {",
+			"",
+			"\treturn (",
+			"\t\t<div className= {styles.${1:Componente}}>",
+			"\t\t\t",
+			"\t\t</div>" ,
+			"\t)",
+			"}"
+		],
+		"description": "Cria um componente funcional com css Modular"
+	}
+}
+
+
+	
